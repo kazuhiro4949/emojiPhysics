@@ -2,8 +2,8 @@
 //  LabelScene.swift
 //  emojiPhysicsBody
 //
-//  Created by kahayash on 2018/09/10.
-//  Copyright © 2018 kahayash. All rights reserved.
+//  Created by kazuhiro hayashi on 2018/09/10.
+//  Copyright © 2018  kazuhiro hayashi. All rights reserved.
 //
 
 import Foundation
