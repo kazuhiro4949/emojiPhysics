@@ -1,22 +1,24 @@
 //
-//  GameScene.swift
+//  LabelScene.swift
 //  emojiPhysicsBody
 //
 //  Created by kahayash on 2018/09/10.
 //  Copyright © 2018 kahayash. All rights reserved.
 //
 
+import Foundation
+
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class LabelScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
     override func didMove(to view: SKView) {
         
-
+        
         let ground = SKSpriteNode(color: .black, size: CGSize(width: view.frame.width*2, height: 50))
         ground.position = CGPoint(x: 0, y: -view.frame.size.height + 50)
         ground.physicsBody = SKPhysicsBody(rectangleOf: ground.size)
@@ -38,18 +40,16 @@ class GameScene: SKScene {
         let size = CGSize(width: 17, height: 17)
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         
-        (makeRandomEmoji() as NSString).draw(in: CGRect(origin: .zero, size: size), withAttributes: nil)
+        (generate() as NSString).draw(in: CGRect(origin: .zero, size: size), withAttributes: nil)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
     }
     
-    func makeRandomEmoji() -> String {
-        let range = 0x1F300...0x1F3F0
-        let index = Int(arc4random_uniform(UInt32(range.count)))
-        let ord = range.lowerBound + index
-        guard let scalar = UnicodeScalar(ord) else { return "😃" }
-        return String(scalar)
+    func generate() -> String {
+        let base = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        let randomValue = arc4random_uniform(UInt32(base.count))
+        return String(base[base.index(base.startIndex, offsetBy: Int(randomValue))])
     }
     
     func touchUp(atPoint pos : CGPoint) {
@@ -67,6 +67,5 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
-
+    
 }
-

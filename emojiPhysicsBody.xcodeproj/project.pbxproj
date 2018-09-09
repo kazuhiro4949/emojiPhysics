@@ -11,12 +11,15 @@
 		2BB2BA2E2145D1E40079737D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2BA2D2145D1E40079737D /* GameScene.sks */; };
 		2BB2BA302145D1E40079737D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2BA2F2145D1E40079737D /* Actions.sks */; };
 		2BB2BA322145D1E40079737D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA312145D1E40079737D /* GameScene.swift */; };
-		2BB2BA342145D1E40079737D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA332145D1E40079737D /* GameViewController.swift */; };
 		2BB2BA372145D1E40079737D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2BA352145D1E40079737D /* Main.storyboard */; };
 		2BB2BA392145D1E50079737D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2BA382145D1E50079737D /* Assets.xcassets */; };
 		2BB2BA3C2145D1E50079737D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2BA3A2145D1E50079737D /* LaunchScreen.storyboard */; };
 		2BB2BA472145D1E50079737D /* emojiPhysicsBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA462145D1E50079737D /* emojiPhysicsBodyTests.swift */; };
 		2BB2BA522145D1E50079737D /* emojiPhysicsBodyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA512145D1E50079737D /* emojiPhysicsBodyUITests.swift */; };
+		2BB2BA602145E1860079737D /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA5F2145E1860079737D /* LabelViewController.swift */; };
+		2BB2BA622145E1950079737D /* EmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA612145E1950079737D /* EmojiViewController.swift */; };
+		2BB2BA662145E42B0079737D /* LabelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2BB2BA652145E42B0079737D /* LabelScene.sks */; };
+		2BB2BA682145E4360079737D /* LabelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2BA672145E4360079737D /* LabelScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,6 @@
 		2BB2BA2D2145D1E40079737D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		2BB2BA2F2145D1E40079737D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		2BB2BA312145D1E40079737D /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		2BB2BA332145D1E40079737D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		2BB2BA362145D1E40079737D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BB2BA382145D1E50079737D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BB2BA3B2145D1E50079737D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		2BB2BA4D2145D1E50079737D /* emojiPhysicsBodyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = emojiPhysicsBodyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB2BA512145D1E50079737D /* emojiPhysicsBodyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emojiPhysicsBodyUITests.swift; sourceTree = "<group>"; };
 		2BB2BA532145D1E50079737D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BB2BA5F2145E1860079737D /* LabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		2BB2BA612145E1950079737D /* EmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiViewController.swift; sourceTree = "<group>"; };
+		2BB2BA652145E42B0079737D /* LabelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LabelScene.sks; sourceTree = "<group>"; };
+		2BB2BA672145E4360079737D /* LabelScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +113,10 @@
 				2BB2BA2D2145D1E40079737D /* GameScene.sks */,
 				2BB2BA2F2145D1E40079737D /* Actions.sks */,
 				2BB2BA312145D1E40079737D /* GameScene.swift */,
-				2BB2BA332145D1E40079737D /* GameViewController.swift */,
+				2BB2BA652145E42B0079737D /* LabelScene.sks */,
+				2BB2BA672145E4360079737D /* LabelScene.swift */,
+				2BB2BA5F2145E1860079737D /* LabelViewController.swift */,
+				2BB2BA612145E1950079737D /* EmojiViewController.swift */,
 				2BB2BA352145D1E40079737D /* Main.storyboard */,
 				2BB2BA382145D1E50079737D /* Assets.xcassets */,
 				2BB2BA3A2145D1E50079737D /* LaunchScreen.storyboard */,
@@ -239,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB2BA372145D1E40079737D /* Main.storyboard in Resources */,
+				2BB2BA662145E42B0079737D /* LabelScene.sks in Resources */,
 				2BB2BA2E2145D1E40079737D /* GameScene.sks in Resources */,
 				2BB2BA392145D1E50079737D /* Assets.xcassets in Resources */,
 				2BB2BA3C2145D1E50079737D /* LaunchScreen.storyboard in Resources */,
@@ -268,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB2BA322145D1E40079737D /* GameScene.swift in Sources */,
-				2BB2BA342145D1E40079737D /* GameViewController.swift in Sources */,
+				2BB2BA682145E4360079737D /* LabelScene.swift in Sources */,
+				2BB2BA622145E1950079737D /* EmojiViewController.swift in Sources */,
 				2BB2BA2C2145D1E40079737D /* AppDelegate.swift in Sources */,
+				2BB2BA602145E1860079737D /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
